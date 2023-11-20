@@ -15,7 +15,7 @@ public class User {
 
     private String imgurl;
 
-    private Integer mg_state;
+    private Integer mgstate;
 
     //姓名
     private String fullname;
@@ -32,11 +32,11 @@ public class User {
     public User() {
     }
 
-    public User( String username,String password ,String imgurl, Integer mg_state, String fullname, String mobile, String email, int memorySize) {
+    public User( String username,String password ,String imgurl, Integer mgstate, String fullname, String mobile, String email, int memorySize) {
         this.username = username;
         this.password=password;
         this.imgurl = imgurl;
-        this.mg_state = mg_state;
+        this.mgstate = mgstate;
         this.fullname = fullname;
         this.mobile = mobile;
         this.email = email;
@@ -50,7 +50,7 @@ public class User {
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", imgurl='" + imgurl + '\'' +
-                ", mg_state=" + mg_state +
+                ", mgstate=" + mgstate +
                 ", fullname='" + fullname + '\'' +
                 ", mobile='" + mobile + '\'' +
                 ", email='" + email + '\'' +
@@ -82,12 +82,12 @@ public class User {
         this.imgurl = imgurl;
     }
 
-    public Integer getMg_state() {
-        return mg_state;
+    public Integer getMgstate() {
+        return mgstate;
     }
 
-    public void setMg_state(Integer mg_state) {
-        this.mg_state = mg_state;
+    public void setMgstate(Integer mgstate) {
+        this.mgstate = mgstate;
     }
 
     public String getFullname() {

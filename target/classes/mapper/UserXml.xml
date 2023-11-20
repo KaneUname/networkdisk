@@ -8,7 +8,7 @@
         <result column="username" property="username" />
         <result column="password" property="password" />
         <result column="imgurl" property="imgurl" />
-        <result column="mg_state" property="mg_state" />
+        <result column="mgstate" property="mgstate" />
         <result column="fullname" property="fullname" />
         <result column="mobile" property="mobile" />
         <result column="email" property="email" />
@@ -17,7 +17,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        SELECT  id, username,password, imgurl, mg_state, fullname, mobile, email, memorySize from nwd_user
+        SELECT  id, username,password, imgurl, mgstate, fullname, mobile, email, memorySize from nwd_user
     </sql>
     <select id="selectMapById" resultType="map">
         <include refid="Base_Column_List"/>
